@@ -88,11 +88,6 @@ h2.secondary-text {
     column-gap: 16px;
 }
 
-
-.down {
-
-}
-
 @media only screen and (min-width: 1000px) {
     header.container-header {
         object-fit: cover;
@@ -137,20 +132,6 @@ ul.lista li{
     margin-bottom: 5px;
 }
 
-
-
-@media only screen and (max-width: 800px) {
-    img.img-responsive {
-        object-fit: cover;
-        width: 43%;
-    }
-
-    ul.lista li{
-        font-size: 25px;
-    }
-    
-}
-
 div.holdAnimation {
     height: 100px;
     position: relative;
@@ -186,7 +167,8 @@ p.description-localizacao {
     font-size: 24px;
     color: rgba(255, 255, 255, 0.6);
     margin-top: 24px;
-    width: 270px;
+    width: 350px;
+    text-align: center;
 }
 
 div.info-localizacao  {
@@ -201,5 +183,24 @@ div.info-localizacao  {
 div.map {
     height: 60vh;
     width: 99vw;
-    background-color: red;
+    background-image: url(../assets/map.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+@media only screen and (max-width: 800px) {
+    img.img-responsive {
+        object-fit: cover;
+        width: 43%;
+    }
+
+    ul.lista li{
+        font-size: 25px;
+    }
+
+    div.map {
+        background-size: 500%;
+        background-position: center;
+    }
+    
 }
